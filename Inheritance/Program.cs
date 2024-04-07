@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Inheritance
 {
@@ -15,6 +17,36 @@ namespace Inheritance
             // Create a class Bird
             // give this class 4 members that are specific to Bird
             // Set this class to inherit from your Animal Class
+
+
+            Bird Robin = new Bird()
+            {
+                
+                Eyes = 2,
+                MaleOrFemale  =  "Male",
+                BodySize = "Small",
+                Age = 3
+                
+           };
+
+            Reptile Rep = new Reptile()
+            {
+                Eyes = 2,
+                MaleOrFemale = "Female",
+                BodySize = "Small",
+                Age = 5,
+                HasClaws = true,
+                IsItColdBlooded = true,
+               DoesItLayEggs = true,
+               NumberOfLegs = 2
+
+            };
+
+          
+           
+
+           
+            
 
             // Create a class Reptile
             // give this class 4 members that are specific to Reptile
@@ -34,6 +66,10 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+            
         }
+
+       
     }
 }
