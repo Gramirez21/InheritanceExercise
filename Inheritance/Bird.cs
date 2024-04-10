@@ -36,5 +36,7 @@ namespace Inheritance
             Console.WriteLine($"Age {Age}");
 
         }
+
+        
     }
 }

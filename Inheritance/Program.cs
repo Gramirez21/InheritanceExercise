@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Inheritance
@@ -41,6 +42,22 @@ namespace Inheritance
                NumberOfLegs = 2
 
             };
+
+            List <Animal> AnimalsInVet = new List<Animal>();
+
+            AnimalsInVet.Add(Robin);
+            AnimalsInVet.Add(Rep);
+
+            Console.WriteLine("Please select Patient");
+            var userInput = Console.ReadLine();
+            if (userInput.ToLower() == "rep")
+            {
+                Rep.Details();
+            }
+            else if (userInput.ToLower() == "robin")
+            {
+                Robin.Details();
+            }
 
           
            
