@@ -20,7 +20,7 @@ namespace Inheritance
             // Set this class to inherit from your Animal Class
 
 
-            Bird Robin = new Bird()
+            Bird robin = new Bird()
             {
                 
                 Eyes = 2,
@@ -30,7 +30,7 @@ namespace Inheritance
                 
            };
 
-            Reptile Rep = new Reptile()
+            Reptile rep = new Reptile()
             {
                 Eyes = 2,
                 MaleOrFemale = "Female",
@@ -45,18 +45,18 @@ namespace Inheritance
 
             List <Animal> AnimalsInVet = new List<Animal>();
 
-            AnimalsInVet.Add(Robin);
-            AnimalsInVet.Add(Rep);
+            AnimalsInVet.Add(robin);
+            AnimalsInVet.Add(rep);
 
-            Console.WriteLine("Please select Patient");
+            Console.WriteLine("Please select Patient rep or robin");
             var userInput = Console.ReadLine();
             if (userInput.ToLower() == "rep")
             {
-                Rep.Details();
+                rep.Details();
             }
             else if (userInput.ToLower() == "robin")
             {
-                Robin.Details();
+                robin.Details();
             }
 
           
